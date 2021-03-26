@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MaishaboraApp</string>
+    <string name="shortTerm">Short Term</string>
+    <string name="longTerm">Long Term</string>
+    <string-array name="Terms">
+        <item>Select Terms</item>
+        <item>@string/shortTerm</item>
+        <item>@string/longTerm</item>
+    </string-array>
+    <string name="sacconame">
+        MAisha bora
+        sacco
+    </string>
+</resources>

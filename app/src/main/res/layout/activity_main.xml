@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999da1"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvmicrofinance"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="600dp"
+        android:background="@color/textviews"
+        android:text="    MAISHA BORA                  MICRO FINANCE "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvloanrequest"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="LoanTerm"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="22dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.013"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvmicrofinance"-->
+<!--        app:layout_constraintVertical_bias="0.113" />-->
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="326dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/backgrounds"
+        android:entries="@array/Terms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvmicrofinance"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/ratetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvmicrofinance"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/tvrate"
+        android:layout_width="142dp"
+        android:layout_height="28dp"
+        android:background="@drawable/backgrounds"
+        android:text="0%"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvmicrofinance"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount "
+        android:textColor="@color/design_default_color_error"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <EditText
+        android:id="@+id/amounttextview"
+        android:layout_width="284dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/backgrounds"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="166dp"
+        android:layout_height="62dp"
+        android:text="Interest Payable"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/totalamounttv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/interestpayable"
+        android:layout_width="234dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="44dp"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/amounttextview"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/totalamounttv"
+        android:layout_width="147dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="136dp"
+        android:text="Total Amount"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <TextView
+        android:id="@+id/totalamount"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="152dp"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/amounttextview" />
+
+    <Button
+        android:id="@+id/confirmbtn"
+        android:layout_width="413dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="76dp"
+        android:text="confirm Loan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
